@@ -2,9 +2,9 @@ class Planet {
   float x, y, r, gravity;
   boolean hasAtmo;
   color t = color(0);
-  Planet(float xb, float yb, float rb, float gravityb, boolean atmo) {
+  Planet(float xb, float yb, float rb, float gravityb, boolean atmo, Rocket rocket) {
     x = xb;
-    y = yb;
+    y = yb + rb;
     r = rb;
     gravity = gravityb;
     hasAtmo = atmo;
